@@ -23,7 +23,7 @@ export default function Home() {
 			let retrivedExpenses = [];
 			const response = await axios({
 				method: "get",
-				url: `https://expense-tracker-6c86a-default-rtdb.firebaseio.com/${user.uid}.json`,
+				url: `https://expense-tracker-6c86a-default-rtdb.firebaseio.com/UserData/${user.uid}.json`,
 				responseType: "json",
 			});
 			for (const key in response.data) {
